@@ -1,0 +1,27 @@
+{
+  "name": "dbc-challenge",
+  "version": "1.0.0",
+  "description": "Projeto desenvolvido como requisito para teste técnico de uma vaga de desenvolvedor backend.",
+  "main": "main.ts",
+  "type": "commonjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "ts-node-dev src/main.ts"
+  },
+  "keywords": [
+    "Serveless framework",
+    "AWS",
+    "TypeScript",
+    "NodeJs"
+  ],
+  "author": "Emanuel Ernesto",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.1692.0",
+    "puppeteer": "^24.4.0",
+    "ts-node-dev": "^2.0.0"
+  },
+  "devDependencies": {
+    "@types/puppeteer": "^5.4.7"
+  }
+}
