@@ -1,0 +1,30 @@
+{
+  "name": "webscraper-node-challenge",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "rm -rf dist && npx tsc",
+    "seed": "npm run build && node dist/seeds/index.js",
+    "start:dev": "serverless deploy",
+    "start:prod": "serverless deploy --stage production",
+    "shutdown:dev": "serverless remove",
+    "shutdown:prod": "serverless remove --stage production"
+  },
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.585.0",
+    "@aws-sdk/client-s3": "^3.772.0",
+    "@aws-sdk/lib-dynamodb": "^3.585.0",
+    "@aws-sdk/s3-request-presigner": "^3.772.0",
+    "@serverless-aws/serverless-s3-remover": "^0.6.5",
+    "aws-lambda": "^1.0.7",
+    "date-fns-tz": "^3.2.0",
+    "puppeteer": "^24.4.0",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.147",
+    "@types/node": "^22.13.10",
+    "@types/puppeteer": "^5.4.7",
+    "typescript": "^5.8.2"
+  }
+}

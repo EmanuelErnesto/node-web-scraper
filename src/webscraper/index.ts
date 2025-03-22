@@ -1,9 +1,9 @@
-import puppeteer, { Browser, Page } from 'puppeteer';
+import puppeteer, { Browser, Page } from "puppeteer";
 
 export class WebScraper {
   public static async initBrowser(): Promise<Browser> {
     return await puppeteer.launch({
-      headless: false,
+      headless: true,
       args: ['--start-maximized']
     });
   }
@@ -21,3 +21,5 @@ export class WebScraper {
     await browser.close();
   }
 }
+
+
